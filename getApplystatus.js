@@ -29,3 +29,5 @@ var interp={
 alert(name+'的当前申请状态为：'+apply_status+'\n\n参考含义：'+interp[number]);
 return 0;
 }
+
+getApplyStatus();
