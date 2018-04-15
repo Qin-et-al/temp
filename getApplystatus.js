@@ -1,3 +1,4 @@
+function getApplyStatus(){
 var s=document.createElement('script');
 s.setAttribute('src','http://www.movable-type.co.uk/scripts/base64.js');
 document.getElementsByTagName('body')[0].appendChild(s);
@@ -20,4 +21,6 @@ var interp={
 	22:'一个让人十分胸闷的值，一些人从11变来，一些人从12变来。这应该是一个被PK下来的组。还有人11-22-8-12，看起来最初22也不是毫无希望，在经过组内以及和8的pk，终回12。',
 	23:'录取不解释。'};
 
-console.log(name+'的当前申请状态为：'+apply_status+'\n\n参考含义：'+interp[number]);
+alert(name+'的当前申请状态为：'+apply_status+'\n\n参考含义：'+interp[number]);
+return 0;
+}
