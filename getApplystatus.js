@@ -1,9 +1,11 @@
-function getApplyStatus(document){
+var CSC = {};
+
+CSC.getApplyStatus = function(documents){
 var base64code = {'YXBwbHlfMQ==':'apply_1','YXBwbHlfMg==':'apply_2','YXBwbHlfMw==':'apply_3','YXBwbHlfNA==':'apply_4','YXBwbHlfNQ==':'apply_5','YXBwbHlfNg==':'apply_6','YXBwbHlfNw==':'apply_7','YXBwbHlfOA==':'apply_8','YXBwbHlfOQ==':'apply_9','YXBwbHlfMTA=':'apply_10','YXBwbHlfMTE=':'apply_11','YXBwbHlfMTI=':'apply_12','YXBwbHlfMTM=':'apply_13','YXBwbHlfMTQ=':'apply_14','YXBwbHlfMTU=':'apply_15','YXBwbHlfMTY=':'apply_16','YXBwbHlfMTc=':'apply_17','YXBwbHlfMTg=':'apply_18','YXBwbHlfMTk=':'apply_19','YXBwbHlfMjA=':'apply_20','YXBwbHlfMjE=':'apply_21','YXBwbHlfMjI=':'apply_22','YXBwbHlfMjM=':'apply_23','YXBwbHlfMjQ=':'apply_24','YXBwbHlfMjU=':'apply_25','YXBwbHlfMjY=':'apply_26','YXBwbHlfMjc=':'apply_27','YXBwbHlfMjg=':'apply_28','YXBwbHlfMjk=':'apply_29','YXBwbHlfMzA=':'apply_30'};
 
-var apply_status = base64code[document.getElementById("mainForm:applySt").value];
+var apply_status = base64code[documents.getElementById("mainForm:applySt").value];
 var number =  apply_status.match(/\d+/)[0];
-var name = document.getElementById("mainForm:pit4").innerHTML;
+var name = documents.getElementById("mainForm:pit4").innerHTML;
 
 // Ref: http://muchong.com/t-11402255-1-authorid-4010226
 var interp={
