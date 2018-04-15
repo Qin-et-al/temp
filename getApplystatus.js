@@ -1,9 +1,14 @@
-function getApplyStatus(){
-var s=document.createElement('script');
-s.setAttribute('src','http://www.movable-type.co.uk/scripts/base64.js');
-document.getElementsByTagName('body')[0].appendChild(s);
-void(s);
+// var s=document.createElement('script');
+// s.setAttribute('src','http://www.movable-type.co.uk/scripts/base64.js');
+// document.getElementsByTagName('body')[0].appendChild(s);
+// void(s);
 
+var imported = document.createElement("script");
+imported.src = "http://www.movable-type.co.uk/scripts/base64.js"; 
+document.getElementsByTagName("head")[0].appendChild(imported);
+
+
+function getApplyStatus(){
 var apply_status = Base64.decode(document.getElementById("mainForm:applySt").value);
 var number =  apply_status.match(/\d+/)[0];
 
